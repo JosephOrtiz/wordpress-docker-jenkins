@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/TU_USUARIO/wordpress-docker-jenkins.git'
+            }
+        }
+
+        stage('Down') {
+            steps {
+                sh 'docker compose down'
+            }
+        }
+
+        stage('Up') {
+            steps {
+                sh 'docker compose up -d'
+            }
+        }
+
+        stage('Verify') {
+            steps {
+                sh 'docker ps'
+            }
+        }
+    }
+}
