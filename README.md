@@ -54,3 +54,8 @@ El `Jenkinsfile` incluido automatiza:
 
 4\. Verificación con `docker ps`
 
+
+
+## Autor
+Josseph Ortiz - Universidad Politécnica Internacional
+Práctica: Organización de Archivos
