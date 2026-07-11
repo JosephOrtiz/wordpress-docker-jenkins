@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        COMPOSE_PROJECT_NAME = 'wordpress-docker'
+    }
+
     stages {
         stage('Checkout') {
             steps {
