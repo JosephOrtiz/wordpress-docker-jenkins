@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/TU_USUARIO/wordpress-docker-jenkins.git'
+                git branch: 'main', url: 'https://github.com/JosephOrtiz/wordpress-docker-jenkins.git'
             }
         }
 
